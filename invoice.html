@@ -17,11 +17,18 @@
                     <div class="list-menu ">
                         <ul class="menu-item">
                             <li>
-                                <a href="#">
                                     <i class="fa-solid fa-square-poll-vertical icon-menu"></i>
-                                    <p class="text-item ">Dashboard</p>
-                                </a>
-                            </li>
+                                    <span class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <p class="dashbrd">Dhashboard</p>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                          <a class="dropdown-item" href="#">Action</a>
+                                          <a class="dropdown-item" href="#">Another action</a>
+                                          <div class="dropdown-divider"></div>
+                                          <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </span>
                             <li>
                                 <a>
                                     <i class="fa-solid fa-building-columns icon-menu"></i>
@@ -151,7 +158,9 @@
             </div>
             <div class="right-invoice-content">
                 <div class="dropdown">
+                  
                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenu3" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+                        <i class="fa-solid fa-plus"></i>
                         Invoices
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenu3">
@@ -204,41 +213,163 @@
             </div>
             <p class="table-header"> Table Header</p>
             <div class="divider"></div>
-
-
-            <div class="form-group col-md-4">
-                <input class="form-control rounded-0 py-2" type="search" value="search" id="example-search-input">
-            </div>
+            <section>
+                <div class="ref-cal-filter-set">
+                    <div class="form-group">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Invoice No./Reference No./Contact code/Amoount">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="22 Feb 2022 -> 28 Feb 2022">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <div class="filter-set">
+                          <div class="dropdown left-drpd">
+                            <i class="fa-solid fa-filter"></i>
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenu3" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+                                Filter
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenu3" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+                                Settings
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                        
+                   
+                    </div>
+            </section>
+           
             <!-- /.form-group -->
             <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                </tbody>
+                <tr>
+                    <th>Invoice Number</th>
+                    <th>Invoice Date</th>
+                    <th>Customer name</th>
+                    <th>Invoice Amount</th>
+                    <th>Received Amount</th>
+                    <th>Due Amount</th>
+                    <th>Doc Type</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>IN/6/19-20/00001</td>
+                    <td>30/08/2022</td>
+                    <td>Priyanka Jadhav</td>
+                    <td>2,67,400</td>
+                    <td>2,67,400</td>
+                    <td>2,67,400</td>
+                    <td>TD24</td>
+                    <td class="received"><span>Received</span></td>
+                </tr>
+                <tr>
+                    <td>IN/6/19-20/00002</td>
+                    <td>30/08/2022</td> 
+                    <td>Arya Sharma</td> 
+                    <td>6,53,518</td> 
+                    <td>6,53,518</td> 
+                    <td>6,53,518</td> 
+                    <td>TD17</td> 
+                    <td class="await"><span>Awaiting Receipt</span></td>       
+                </tr>
+                <tr>
+                    <td>IN/6/19-20/00003</td>
+                    <td>30/09/2022</td> 
+                    <td>Richa Verma</td> 
+                    <td>4,49,003</td> 
+                    <td>4,49,003</td> 
+                    <td>4,49,003</td> 
+                    <td>TD05</td> 
+                    <td class="received"><span>Received</span></td>    
+                </tr>
+                <tr>
+                    <td>IN/6/19-20/00004</td> 
+                    <td>29/08/2022</td> 
+                    <td>Supriya Jha</td> 
+                    <td>4,87,,441</td> 
+                    <td>4,87,,441</td> 
+                    <td>4,87,,441</td> 
+                    <td>TD25</td> 
+                    <td class="await"><span>Awaiting Receipt</span></td>    
+                </tr>
+                <tr>
+                    <td>IN/6/19-20/00005</td>
+                    <td>29/08/2022</td> 
+                    <td>Aaradhya Anand</td> 
+                    <td>6,51,535</td> 
+                    <td>6,51,535</td> 
+                    <td>6,51,535</td> 
+                    <td>TD27</td> 
+                    <td class="await"><span>Received</span></td>    
+                </tr>
+                <tr>
+                    <td>IN/6/19-20/00006</td>
+                    <td>28/08/2022</td>
+                    <td>Ramesh Sharma</td>
+                    <td>4,87,441</td>
+                    <td>4,87,441</td>
+                    <td>4,87,441</td>
+                    <td>TD06</td>
+                    <td class="cancelled"><span>Cancelled</span></td>
+                </tr>                  
+                <tr>
+                <td>IN/6/19-20/00007</td> 
+                <td>27/08/2022</td>
+                <td>Suraj Pandey</td>
+                <td>6,53,518</td>
+                <td>6,53,518</td>
+                <td>6,53,518</td>
+                <td>TD16</td>
+                <td class="await"><span>Awaiting Receipt</span></td>
+                </tr>
+                <tr>
+                    <td>IN/6/19-20/00008</td>
+                    <td>26/08/2022</td> 
+                    <td>Kishore Kumar</td> 
+                    <td>6,51,535</td> 
+                    <td>6,51,535</td> 
+                    <td>6,51,535</td> 
+                    <td>TD20</td> 
+                    <td class="received"><span>Received</span></td>    
+                </tr>
+                <tr>
+                    <td>IN/6/19-20/00009</td>
+                    <td>25/08/2022</td> 
+                    <td>Yamini Gowda</td> 
+                    <td>4,87,441</td> 
+                    <td>4,87,441</td> 
+                    <td>4,87,441</td> 
+                    <td>TD03</td> 
+                    <td class="await"><span>Awaiting Receipt</span></td>    
+                </tr>
+                <tr>
+                    <td>IN/6/19-20/00010</td>
+                    <td>25/08/2022</td> 
+                    <td>Kanishka Kapoor</td> 
+                    <td>5,58,612</td> 
+                    <td>5,58,612</td> 
+                    <td>5,58,612</td> 
+                    <td>TD26</td> 
+                    <td class="cancelled" ><span>Cancelled</span></td>
+                    </td>    
+                </tr>    
             </table>
-
+            <footer>
+                <div class="foot">
+                    <p>Showing 1-20 <span class="hidden-color">of 63</span></p>
+                    <a href="#">1 ... <span class="digit-ten">10</span> 11 <span class="digit-twelve">12</span> 13 14 15 16 ... 26</a>
+                </div>
+            </footer>
+        </div> 
+    </div>     
 </body>
