@@ -13,7 +13,8 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: aliceblue;
 }
-.dashbrd{
+
+.dashbrd {
     font-size: 11px;
     margin-top: 6px;
 }
@@ -185,8 +186,6 @@ body {
     margin-left: 15px;
 }
 
-
-
 .input-div {
     margin-left: 2rem;
     outline: none !important;
@@ -214,11 +213,12 @@ body {
     border: 1px solid #015485;
     background-color: whitesmoke;
 }
-.fa-plus{
+
+.fa-plus {
     font-size: 8px;
     padding-right: 1px;
-  
 }
+
 .btn-secondary:not(:disabled):not(.disabled).active,
 .btn-secondary:not(:disabled):not(.disabled):active,
 .show>.btn-secondary.dropdown-toggle {
@@ -253,71 +253,83 @@ body {
     border-color: #2596be;
     display: block;
 }
-.form-group{
+
+.form-group {
     margin-left: 15px;
     position: relative;
-    
 }
-.form-group i{
+
+.form-group i {
     position: absolute;
-    color:#015485;
+    color: #015485;
     opacity: 1 !important;
     font-size: 11px;
     padding: 8px 6px;
 }
-.form-control{
+
+.form-control {
     width: 242px;
-    height:27px !important;
+    height: 27px !important;
     font-size: 10px !important;
     text-align: left;
     border-color: #2596be;
     padding-left: 23px;
 }
-.form-control::placeholder{
+
+.form-control::placeholder {
     color: lightgray;
 }
-.ref-cal-filter-set{
+
+.ref-cal-filter-set {
     display: flex;
 }
- .fa-calendar-days{
+
+.fa-calendar-days {
     position: absolute;
     top: 1px;
-    left: 170px;;
- }
+    left: 170px;
+    ;
+}
+
 .invoice2 btn {
     justify-content: end;
 }
 
-.filter-set{
-display: flex;
-  margin-left:auto;
-  margin-right: 10px;
-  position: relative;
+.filter-set {
+    display: flex;
+    margin-left: auto;
+    margin-right: 10px;
+    position: relative;
 }
+
 .filter-set {
     margin-right: 13px;
     font-size: 10px;
 }
-.filter-set i{
-position: absolute;
-top:6px;
-padding-left: 5px;
-padding-right: 5px;
-margin-left: -1px;
+
+.filter-set i {
+    position: absolute;
+    top: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: -1px;
 }
+
 .input-field {
     border: 1px solid #2596be;
     padding: 3px;
     border-radius: 5px;
 }
-.left-drpd{
+
+.left-drpd {
     margin-right: 10px;
- 
 }
-.dropdownMenu3{
+
+.dropdownMenu3 {
     font-size: 10px;
     padding: 1px 22px;
 }
+
 .form-select {
     border-color: #2596be !important;
     margin-left: 16px;
@@ -365,7 +377,6 @@ input:focus::placeholder {
     position: absolute;
     left: 5px;
 }
-
 
 .icon2 {
     margin-left: 90px;
@@ -611,6 +622,7 @@ input:focus::placeholder {
     margin-right: 6px;
     font-size: 11px;
 }
+
 .await span {
     color: #f5b48f;
     background-color: #f8e6dc;
@@ -628,12 +640,15 @@ input:focus::placeholder {
 .hidden-color {
     color: grey;
 }
-table{
+
+table {
     font-size: 10px;
 }
-th{
+
+th {
     background-color: #b9dce9;
 }
+
 .foot {
     font-size: 11px;
     display: flex;
@@ -669,4 +684,27 @@ th{
     color: #e6f1f8;
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
 
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
