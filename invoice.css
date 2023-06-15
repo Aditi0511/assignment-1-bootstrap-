@@ -25,7 +25,7 @@ body {
 
 .navbar {
     width: 100%;
-    height: 4rem;
+    height: 3.5rem;
     background-color: #015485;
     color: white;
     padding: 0px 2px;
@@ -67,7 +67,7 @@ body {
 .menu-item li {
     margin-left: 1rem;
     align-items: center;
-    height: 64px;
+    height: 56px;
     line-height: 14px;
     padding-top: 5px;
 }
@@ -93,7 +93,6 @@ body {
 }
 
 .col-3 {
-    padding-right: 1rem;
     display: flex;
     align-items: right;
 }
@@ -103,8 +102,10 @@ body {
     align-items: center;
     height: 100%;
     list-style: none;
-    margin-left: 197px;
-    margin-top: -17px;
+    margin-top: -13px;
+    position: absolute;
+    right: -71px;
+ 
 }
 
 .col-3 img {
@@ -200,9 +201,9 @@ body {
 }
 
 .bar-icon {
-    padding: 6px 7px;
+   padding: 7px 8px 6px 7px;
     background-color: #015485;
-    margin-left: 3px;
+    margin-left: 10px;
     border-radius: 5px;
     color: white;
     font-size: 10px;
@@ -211,12 +212,18 @@ body {
 .btn-secondary {
     color: #015485;
     border: 1px solid #015485;
-    background-color: whitesmoke;
+    background-color: white;
+    width: 93px;
 }
 
 .fa-plus {
+    position: absolute;
     font-size: 8px;
     padding-right: 1px;
+    left: 6px;
+    top: 9px;
+    background-color: lightblue;
+    border-radius: 50%
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active,
@@ -263,7 +270,7 @@ body {
     position: absolute;
     color: #015485;
     opacity: 1 !important;
-    font-size: 11px;
+    font-size: 10px;
     padding: 8px 6px;
 }
 
@@ -273,7 +280,8 @@ body {
     font-size: 10px !important;
     text-align: left;
     border-color: #2596be;
-    padding-left: 23px;
+    padding-left: 17px;
+    padding-right: 18px;;
 }
 
 .form-control::placeholder {
@@ -286,9 +294,8 @@ body {
 
 .fa-calendar-days {
     position: absolute;
+    left: 163px;
     top: 1px;
-    left: 170px;
-    ;
 }
 
 .invoice2 btn {
@@ -310,7 +317,7 @@ body {
 .filter-set i {
     position: absolute;
     top: 6px;
-    padding-left: 5px;
+    padding-left: 10px;
     padding-right: 5px;
     margin-left: -1px;
 }
@@ -687,24 +694,40 @@ th {
 .dropdown-content {
     display: none;
     position: absolute;
+    top: 48px;
+    left: -14px;;
     background-color: #f1f1f1;
-    min-width: 160px;
+    min-width: 130px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+   
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+    background-color: white;
 }
 
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 12px 17px 12px 11px;
     text-decoration: none;
     display: block;
+    text-align:left;
 }
 
 .dropdown {
     position: relative;
     cursor: pointer;
+}
+.dropdown:hover{
+    background-color: white;
+    color: #015485;
+}
+.akg{
+    display:flex;
+}
+.date-cal{
+    width: 189px;
+    padding-right: 23px;
 }
