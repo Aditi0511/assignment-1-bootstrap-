@@ -12,6 +12,11 @@ p {
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: aliceblue;
+    overflow-x: hidden;
+}
+
+.nav-row {
+    height: 100%;
 }
 
 .dashbrd {
@@ -48,7 +53,8 @@ body {
 .menu-item {
     display: flex;
     list-style-type: none;
-    margin-top: 8px;
+    margin-bottom: 0px;
+    height: 100%;
 }
 
 .sales-item {
@@ -66,10 +72,10 @@ body {
 
 .menu-item li {
     margin-left: 1rem;
-    align-items: center;
-    height: 56px;
     line-height: 14px;
-    padding-top: 5px;
+    margin-left: 1rem;
+    line-height: 14px;
+    padding-top: 13px;
 }
 
 .menu-item-sales {
@@ -102,10 +108,8 @@ body {
     align-items: center;
     height: 100%;
     list-style: none;
-    margin-top: -13px;
     position: absolute;
     right: -71px;
- 
 }
 
 .col-3 img {
@@ -201,7 +205,7 @@ body {
 }
 
 .bar-icon {
-   padding: 7px 8px 6px 7px;
+    padding: 7px 8px 6px 7px;
     background-color: #015485;
     margin-left: 10px;
     border-radius: 5px;
@@ -281,7 +285,8 @@ body {
     text-align: left;
     border-color: #2596be;
     padding-left: 17px;
-    padding-right: 18px;;
+    padding-right: 18px;
+    ;
 }
 
 .form-control::placeholder {
@@ -694,13 +699,12 @@ th {
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 48px;
-    left: -14px;;
     background-color: #f1f1f1;
     min-width: 130px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-   
+    top: 64px;
+    left: -16px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -713,21 +717,24 @@ th {
     padding: 12px 17px 12px 11px;
     text-decoration: none;
     display: block;
-    text-align:left;
+    text-align: left;
 }
 
 .dropdown {
     position: relative;
     cursor: pointer;
 }
-.dropdown:hover{
+
+.dropdown:hover {
     background-color: white;
     color: #015485;
 }
-.akg{
-    display:flex;
+
+.akg {
+    display: flex;
 }
-.date-cal{
+
+.date-cal {
     width: 189px;
     padding-right: 23px;
 }
