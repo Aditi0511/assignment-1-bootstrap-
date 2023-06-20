@@ -81,13 +81,12 @@ body {
 
 .menu-item-sales {
     background-color: white;
-    margin-top: -8px;
-    padding-top: 8px;
+
 }
 
 .menu-item-sales .sales-icon-text {
     color: #015485;
-    padding-top: 8px;
+
 }
 
 .menu-item p {
@@ -287,7 +286,7 @@ body {
     border-color: #2596be;
     padding-left: 17px;
     padding-right: 18px;
-    
+
 }
 
 .form-control::placeholder {
@@ -311,14 +310,12 @@ body {
 .filter-set {
     display: flex;
     margin-left: auto;
-    margin-right: 10px;
-    position: relative;
-}
-
-.filter-set {
     margin-right: 13px;
+    position: relative;
     font-size: 10px;
 }
+
+
 
 .filter-set i {
     position: absolute;
@@ -665,17 +662,30 @@ th {
 .foot {
     font-size: 11px;
     display: flex;
+    align-items: center;
     justify-content: right;
-    padding: 2px;
-    margin-bottom: 10px;
+    padding-bottom: 8px;
+
 }
-.foot p{
+
+.foot p {
     margin-right: 50px;
+
+
 }
-.foot a {
-    text-decoration: none;
-    margin-left: 5px;
-    margin-right: 9px;
+
+.pagination {
+    display: flex;
+    justify-content: right;
+}
+
+.pagination .page-link {
+
+    border: none;
+    font-size: 12px;
+    color: black;
+    margin-bottom: 0;
+
 }
 
 .cancelled span {
@@ -715,7 +725,7 @@ th {
     display: block;
     background-color: white;
     padding: 0px 5px;
-    
+
 }
 
 .content1 a {
@@ -743,4 +753,36 @@ th {
 .date-cal {
     width: 189px;
     padding-right: 23px;
+}
+
+nav ul {
+    margin-bottom: 0px !important;
+}
+
+nav .page-item {
+    margin-left: 8px;
+}
+nav .page-link{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+nav li .ten-digit {
+    background-color: #9bcbdd;
+    color: #015485;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.pagination-sm .page-link {
+    padding: 0.5px 4.5px;
+
+}
+
+nav li .twelve-digit {
+    background-color: #015485;
+    color: #9bcbdd;
+    border-radius: 5px;
+    padding: 5px;
 }
