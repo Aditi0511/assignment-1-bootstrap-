@@ -10,7 +10,7 @@ p {
 }
 
 body {
-    font-family: "Mulish", sans-serif;
+    font-family: "Rubik", sans-serif;
     background-color: aliceblue;
     overflow-x: hidden;
 }
@@ -47,7 +47,7 @@ body {
 }
 
 .text-item {
-    font-size: .7rem;
+    font-size: 11px;
 }
 
 .menu-item {
@@ -56,7 +56,9 @@ body {
     margin-bottom: 0px;
     height: 100%;
 }
-
+.list1{
+    margin-left: 5px;
+}
 .sales-item {
     background-color: white;
     height: 64px;
@@ -71,7 +73,7 @@ body {
 }
 
 .menu-item li {
-    margin-left: 3px;
+    margin-left: 5px;
     line-height: 14px;
     padding-top: 13px;
     padding-left: 9px;
@@ -92,8 +94,12 @@ body {
 .menu-item p {
     margin-top: .3rem;
     font-weight: normal;
+    color:#d7e7ed;
 }
-
+.text-item-sales{
+    color: #015485 !important;
+    font-size: .7rem;
+}
 .menu-item i {
     margin-left: 5px;
 }
@@ -125,6 +131,7 @@ body {
 .arrow {
     margin-left: .8rem;
     padding-top: 3px;
+    color: white;
 }
 
 .sub-header {
@@ -143,9 +150,9 @@ body {
 }
 
 .sub-header p {
-    font-size: .79rem;
-    color: #404241;
-    font-weight: 500;
+    font-size: 11px;
+    color: black;
+    font-weight: 400;
     margin-left: .8rem;
     align-items: center;
 }
@@ -202,11 +209,15 @@ body {
 
 .btn {
     padding: 1px 17px;
-    font-size: 13px !important;
+    font-size: 12px !important;
 }
-
+.form-group-number{
+    width:300px;
+}
 .bar-icon {
-    padding: 7px 8px 6px 7px;
+    padding: 5px 7px 5px 7px;
+    height: 22px;
+    margin-top: 2px;
     background-color: #015485;
     margin-left: 10px;
     border-radius: 5px;
@@ -216,10 +227,14 @@ body {
 }
 
 .btn-secondary {
-    color: #015485;
-    border: 1px solid #015485;
+    color: #067ec5;
+    border: 1px solid #bddbed;
     background-color: white;
     width: 93px;
+
+}
+.btn{
+    box-shadow: none !important;
 }
 
 .fa-plus {
@@ -227,7 +242,7 @@ body {
     font-size: 8px;
     width: 11px;
     height: 11px;
-    left: 4px;
+    left: 11px;
     top: 7px;
     text-align: center;
     background-color: lightblue;
@@ -250,8 +265,8 @@ body {
 }
 
 .invoice-content {
-    color: #2596be;
-    font-size: 16px;
+    color: #015485;
+    font-size: 15px;
     display: flex;
     align-items: center;
   
@@ -276,6 +291,7 @@ body {
     font-size: 10px;
     padding: 8px 6px;
     font-size: 9px;
+    top: 2px;
 }
 .filter{
     padding-right: 1px;
@@ -284,9 +300,11 @@ body {
     width: 85px;
     position: relative;
     height: 23px;
-    border: 1px solid #015485;
+    border: 1px solid ;
     background-color: white;
     border-radius: 5px;
+    color: #015485;
+    border: 1px solid #bddbed;
 }
 .button i {
     position: absolute;
@@ -294,12 +312,12 @@ body {
   
 }
 .form-control {
-    width: 242px;
+    width: 271px;
     height: 27px !important;
     font-size: 10px !important;
     text-align: left;
-    border-color: #2596be;
-    padding-left: 17px;
+    border-color:#bddbed !important;
+    padding-left: 21px;
     padding-right: 18px;
 
 }
@@ -330,18 +348,25 @@ body {
     font-size: 10px;
 }
 
-
+.button span{
+    padding-left: 12px;
+    font-size: 11px;
+    color: #015485;
+}
 
 .filter-set i {
     position: absolute;
-    top: 6px;
+    top: 5px;
     padding-left: 10px;
     padding-right: 5px;
-    margin-left: -1px;
+   
 }
 .btn-secondary-filter{
     width: 85px;
+    height: 23px;
+    color: #015485 !important;
 }
+
 
 .input-field {
     border: 1px solid #2596be;
@@ -353,6 +378,7 @@ body {
     margin-right: 10px;
    
 }
+
 
 .dropdownMenu3 {
     font-size: 10px;
@@ -444,7 +470,8 @@ input:focus::placeholder {
 }
 
 .colour-black {
-    color: black;
+    color: black !important;
+    font-weight: 400;
 }
 
 .info-inner {
@@ -478,6 +505,7 @@ input:focus::placeholder {
 .step .step-list {
     list-style-type: none;
     display: flex;
+    margin-left: 4px;
 }
 
 .step .arrow-space {
@@ -495,7 +523,7 @@ input:focus::placeholder {
 
 .step .create-sales {
     color: black;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .step .arrow-space {
@@ -506,7 +534,7 @@ input:focus::placeholder {
 .due-amount {
     font-size: 13px;
     color: #2596be;
-    margin-right: 5px;
+    margin-right: 11px;
 }
 
 .table-header {
@@ -682,6 +710,9 @@ input:focus::placeholder {
 
 th {
     background-color: #b9dce9;
+    font-weight: normal !important;
+    color: black;
+    font-weight: 500 !important;
 }
 td:nth-child(1){
     color: #015485;
@@ -761,12 +792,14 @@ th:last-child{
     margin: 0;
     padding: 0;
     left: 0px;
+    
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
     background-color: white;
     padding: 0px 5px;
+    
 
 }
 
@@ -783,19 +816,31 @@ th:last-child{
     position: relative;
     cursor: pointer;
 }
-
+.dropdown-nav:hover{
+    background-color: white !important;
+    color: #015485;
+}
+.dropdown:hover p,
+.dropdown:hover i,
 .dropdown:hover {
-    background-color: white;
+    color: #015485;
+    
+}
+.invoice-right:hover
+{
+    background-color: transparent !important;
     color: #015485;
 }
 
 .date-cal {
     width: 189px;
     padding-right: 23px;
+    padding-left: 9px;
 }
 
 nav ul {
     margin-bottom: 0px !important;
+    margin-right: 13px;
 }
 
 nav .page-item {
@@ -853,12 +898,13 @@ nav li .twelve-digit {
     display: flex;
     font-size: 14px;
     padding-right: 0px !important;
+    color:#d7e7ed;
 }
 .side-arrow{
     color: grey;
-    font-size: 11px;
-    width: 16px;
-    height: 16px;
+    font-size: 9px;
+    width: 13px;
+    height: 13px;
     background-color: lightgray;
     border-radius: 50%;
     text-align: center;
@@ -866,7 +912,9 @@ nav li .twelve-digit {
     margin-left: 15px;
     line-height: 1.5;
 }
-  
+ .right-invoice-content span{
+    padding-left: 9px;
+ } 
 
 .side-arrow-parent{
     display: flex;
